@@ -1,0 +1,20 @@
+sampleinput=input()
+
+lowercase=[]
+uppercase=[]
+odd=[]
+even=[]
+
+for i in sorted(sampleinput):
+    if int(i)%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+
+for i in sorted(sampleinput):
+    if i==i.upper():
+        uppercase.append(i)
+    else:
+        lowercase.append(i)
+
+print(''.join(lowercase+uppercase+odd+even))
